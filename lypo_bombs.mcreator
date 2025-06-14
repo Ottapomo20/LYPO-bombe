@@ -31,7 +31,8 @@
     "modid": "lypo_bombs",
     "modName": "LYPO Bombs",
     "version": "1.0.0",
-    "author": "Matteo, MCreator",
+    "description": "Mod that adds our bombs.",
+    "author": "Demottabois (Ottapomo/Potato, Demon D/Lyerned)",
     "websiteURL": "https://mcreator.net",
     "license": "Not specified",
     "serverSideOnly": false,
@@ -40,6 +41,7 @@
     "dependants": [],
     "mcreatorDependencies": [],
     "currentGenerator": "forge-1.20.1",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
     "modElementsPackage": "net.mcreator.lypobombs"
   },
   "mcreatorVersion": 202400452410
