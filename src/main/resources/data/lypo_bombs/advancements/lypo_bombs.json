@@ -1,0 +1,23 @@
+{
+  "display": {
+    "background": "lypo_bombs:textures/screens/ssasasassa.png",
+    "icon": {
+      "item": "minecraft:tnt"
+    },
+    "title": {
+      "translate": "advancements.lypo_bombs.title"
+    },
+    "description": {
+      "translate": "advancements.lypo_bombs.descr"
+    },
+    "frame": "challenge",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "lypo_bombs_0": {
+      "trigger": "minecraft:tick"
+    }
+  }
+}

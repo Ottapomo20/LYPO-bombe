@@ -1,11 +1,27 @@
 {
-  "mod_elements": [],
+  "mod_elements": [
+    {
+      "name": "LYPOBombs",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lypo_bombs",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/lypo_bombs/advancements/lypo_bombs.json"
+        ]
+      }
+    }
+  ],
   "variable_elements": [],
   "sound_elements": [],
   "tag_elements": {},
   "tab_element_order": {},
   "language_map": {
-    "en_us": {}
+    "en_us": {
+      "advancements.lypo_bombs.title": "LYPO Bombs",
+      "advancements.lypo_bombs.descr": "lypo bombs"
+    }
   },
   "foldersRoot": {
     "name": "~",
