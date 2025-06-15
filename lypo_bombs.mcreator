@@ -11,6 +11,96 @@
           "src/main/resources/data/lypo_bombs/advancements/lypo_bombs.json"
         ]
       }
+    },
+    {
+      "name": "LYPOBombsTab",
+      "type": "tab",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lypo_bombs_tab",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "PotatoBomb",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "potato_bomb",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lypobombs/block/PotatoBombBlock.java",
+          "src/main/resources/assets/lypo_bombs/models/block/potato_bomb.json",
+          "src/main/resources/assets/lypo_bombs/models/item/potato_bomb.json",
+          "src/main/resources/assets/lypo_bombs/blockstates/potato_bomb.json",
+          "src/main/resources/data/lypo_bombs/loot_tables/blocks/potato_bomb.json"
+        ]
+      }
+    },
+    {
+      "name": "PotatoBombRedstoneOn",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "potato_bomb_redstone_on",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lypobombs/procedures/PotatoBombRedstoneOnProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "PotatoBombOnBlockRightClicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "potato_bomb_on_block_right_clicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lypobombs/procedures/PotatoBombOnBlockRightClickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -20,6 +110,9 @@
   "language_map": {
     "en_us": {
       "advancements.lypo_bombs.title": "LYPO Bombs",
+      "block.lypo_bombs.potato_bomb": "Potato Bomb",
+      "block.lypo_bombs.potato_bomb.description_0": "Creative only",
+      "item_group.lypo_bombs.lypo_bombs_tab": "LYPO Bombs",
       "advancements.lypo_bombs.descr": "lypo bombs"
     }
   },

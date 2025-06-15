@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "lypo_bombs:block/potato_bomb_bottom",
+    "up": "lypo_bombs:block/potato_bomb_top",
+    "north": "lypo_bombs:block/potato_bomb_side",
+    "east": "lypo_bombs:block/potato_bomb_side",
+    "south": "lypo_bombs:block/potato_bomb_side",
+    "west": "lypo_bombs:block/potato_bomb_side",
+    "particle": "lypo_bombs:block/potato_bomb_bottom"
+  },
+  "render_type": "solid"
+}
