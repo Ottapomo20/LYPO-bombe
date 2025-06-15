@@ -2,11 +2,13 @@
 package net.mcreator.lypobombs.block;
 
 import net.minecraft.world.phys.BlockHitResult;
+import net.minecraft.world.level.material.FluidState;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.level.Explosion;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.ItemStack;
@@ -19,6 +21,7 @@ import net.minecraft.core.BlockPos;
 
 import net.mcreator.lypobombs.procedures.PotatoBombRedstoneOnProcedure;
 import net.mcreator.lypobombs.procedures.PotatoBombOnBlockRightClickedProcedure;
+import net.mcreator.lypobombs.procedures.PotatoBombBlockDestroyedByPlayerProcedure;
 
 import java.util.List;
 
@@ -44,6 +47,19 @@ public class PotatoBombBlock extends Block {
 		if (world.getBestNeighborSignal(pos) > 0) {
 			PotatoBombRedstoneOnProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
 		}
+	}
+
+	@Override
+	public boolean onDestroyedByPlayer(BlockState blockstate, Level world, BlockPos pos, Player entity, boolean willHarvest, FluidState fluid) {
+		boolean retval = super.onDestroyedByPlayer(blockstate, world, pos, entity, willHarvest, fluid);
+		PotatoBombBlockDestroyedByPlayerProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ(), entity);
+		return retval;
+	}
+
+	@Override
+	public void wasExploded(Level world, BlockPos pos, Explosion e) {
+		super.wasExploded(world, pos, e);
+		PotatoBombRedstoneOnProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
 	}
 
 	@Override

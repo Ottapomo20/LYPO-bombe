@@ -126,6 +126,12 @@
     "onRightClicked": {
       "name": "PotatoBombOnBlockRightClicked"
     },
+    "onDestroyedByPlayer": {
+      "name": "PotatoBombBlockDestroyedByPlayer"
+    },
+    "onDestroyedByExplosion": {
+      "name": "PotatoBombRedstoneOn"
+    },
     "onRedstoneOn": {
       "name": "PotatoBombRedstoneOn"
     },
