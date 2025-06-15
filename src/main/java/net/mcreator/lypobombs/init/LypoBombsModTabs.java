@@ -20,5 +20,6 @@ public class LypoBombsModTabs {
 	public static final RegistryObject<CreativeModeTab> LYPO_BOMBS_TAB = REGISTRY.register("lypo_bombs_tab",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.lypo_bombs.lypo_bombs_tab")).icon(() -> new ItemStack(Blocks.TNT)).displayItems((parameters, tabData) -> {
 				tabData.accept(LypoBombsModBlocks.POTATO_BOMB.get().asItem());
+				tabData.accept(LypoBombsModBlocks.NETHER_BOMB.get().asItem());
 			}).build());
 }

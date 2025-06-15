@@ -11,11 +11,13 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraft.world.level.block.Block;
 
 import net.mcreator.lypobombs.block.PotatoBombBlock;
+import net.mcreator.lypobombs.block.NetherBombBlock;
 import net.mcreator.lypobombs.LypoBombsMod;
 
 public class LypoBombsModBlocks {
 	public static final DeferredRegister<Block> REGISTRY = DeferredRegister.create(ForgeRegistries.BLOCKS, LypoBombsMod.MODID);
 	public static final RegistryObject<Block> POTATO_BOMB = REGISTRY.register("potato_bomb", () -> new PotatoBombBlock());
+	public static final RegistryObject<Block> NETHER_BOMB = REGISTRY.register("nether_bomb", () -> new NetherBombBlock());
 	// Start of user code block custom blocks
 	// End of user code block custom blocks
 }

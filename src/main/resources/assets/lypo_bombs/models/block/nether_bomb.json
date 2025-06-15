@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "lypo_bombs:block/placeholder",
+    "up": "lypo_bombs:block/placeholder",
+    "north": "lypo_bombs:block/placeholder",
+    "east": "lypo_bombs:block/placeholder",
+    "south": "lypo_bombs:block/placeholder",
+    "west": "lypo_bombs:block/placeholder",
+    "particle": "lypo_bombs:block/placeholder"
+  },
+  "render_type": "solid"
+}

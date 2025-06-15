@@ -135,6 +135,86 @@
           }
         ]
       }
+    },
+    {
+      "name": "NetherBomb",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nether_bomb",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lypobombs/block/NetherBombBlock.java",
+          "src/main/resources/assets/lypo_bombs/models/item/nether_bomb.json",
+          "src/main/resources/data/lypo_bombs/loot_tables/blocks/nether_bomb.json",
+          "src/main/resources/assets/lypo_bombs/blockstates/nether_bomb.json",
+          "src/main/resources/assets/lypo_bombs/models/block/nether_bomb.json"
+        ]
+      }
+    },
+    {
+      "name": "NetherBombRedstoneOn",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nether_bomb_redstone_on",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lypobombs/procedures/NetherBombRedstoneOnProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "NetherBombOnBlockRightClicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nether_bomb_on_block_right_clicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lypobombs/procedures/NetherBombOnBlockRightClickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -145,9 +225,11 @@
     "en_us": {
       "advancements.lypo_bombs.title": "LYPO Bombs",
       "block.lypo_bombs.potato_bomb": "Potato Bomb",
+      "block.lypo_bombs.nether_bomb": "Nether Bomb",
       "block.lypo_bombs.potato_bomb.description_0": "Creative only",
       "item_group.lypo_bombs.lypo_bombs_tab": "LYPO Bombs",
-      "advancements.lypo_bombs.descr": "lypo bombs"
+      "advancements.lypo_bombs.descr": "lypo bombs",
+      "block.lypo_bombs.nether_bomb.description_0": "Creative only"
     }
   },
   "foldersRoot": {

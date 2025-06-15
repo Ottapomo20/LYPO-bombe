@@ -17,6 +17,7 @@ import net.mcreator.lypobombs.LypoBombsMod;
 public class LypoBombsModItems {
 	public static final DeferredRegister<Item> REGISTRY = DeferredRegister.create(ForgeRegistries.ITEMS, LypoBombsMod.MODID);
 	public static final RegistryObject<Item> POTATO_BOMB = block(LypoBombsModBlocks.POTATO_BOMB);
+	public static final RegistryObject<Item> NETHER_BOMB = block(LypoBombsModBlocks.NETHER_BOMB);
 
 	// Start of user code block custom items
 	// End of user code block custom items
